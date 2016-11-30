@@ -27,43 +27,136 @@ body, html {
 }
 
 h1 {
+	font-size: 250%;
 	text-align: center;
 	text-decoration: underline;
 }
 
-
 #sub-heading {
-	padding: 30px;
+	padding-top: 30px;
+}
+
+p {
+}
+
+h3{
+	text-align: center;
+}
+
+p::first-letter { 
+    font-size: 150%;
+}
+
+.description {
+	width: 700px;
+	margin: 0 auto;
+	font-size: 2em;
 }
 
 #animal-wrapper {
 	margin: 0 auto; /* to make the div center align to the browser */
     padding: 20px;
-    width: 700px; /* set it to anything */
+    width: 900px; /* set it to anything */
     text-align: center;
+    overflow: auto;
 }
 
 .animal-container {
 	height: 200px;
+	float: left;
+	padding: 50px;
+	margin: 0 auto;
 }
 
 img {
 	max-width:100%;
 	max-height:100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	width: 350px;
+	z-index: 100;
 }
 
-#pig {
-
+#overlay {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 0px;
 }
 
-#cow {
-
+/* Styling for the carousel previous button */
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px dashed #000;
+    -webkit-transition: all 0.3s;
 }
 
-#fish {
-
+/* Styling for the carousel next button */
+#carousel-next {
+	color: black;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px dashed #000;
+    -webkit-transition: all 0.3s;
 }
 
-#chicken {
+.section {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+#carousel {
+	width: 4800px;
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.carousel-container {
+	width: 960px;
+	margin: 0 auto;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+#carousel-item {
+	width: 960px;
+	position: relative;
+	height: 100%;
+	float: left;
+}
 
+.quote, .text {
+	position: absolute;
+	font-size: 36px;
+	color: white;
+	font-weight: 700;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+
+.header-img {
+	margin: 0 auto;
+	width: 300px;
 }
