@@ -1,4 +1,3 @@
 # harryh0.github.io
-An informatic website on how to prepare and cook your meat.
+An attempt to make my resume viewable without Adobe Acrobat.
 
-Made by a dedicated meat lover. Boy did that come out wrong.
